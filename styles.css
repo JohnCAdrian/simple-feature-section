@@ -11,6 +11,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     font-family: 'Outfit', sans-serif;
+    
 }
 
 .feature-container {
@@ -43,9 +44,9 @@ body {
 }
 
 
-
 .section-container {
     display: flex;
+    padding: 0rem 3rem;
     flex-direction: row;
     gap: 2rem;
 }
@@ -118,4 +119,43 @@ section img {
 
 .author-info a {
     text-decoration: none;
+}
+
+@media screen and (max-width: 1024px){
+    .section-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+   .respond-feedback {
+    grid-column: 1 / -1;
+    max-width: 400px;
+    margin: 0 auto;
+   } 
+}
+
+@media screen and (max-width: 600px) {
+    body{
+        background-image: url('resources/Background_image@2x.png');
+    }
+
+    .section-container {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        padding: 0rem 15rem;
+    }
+
+    .header p {
+        font-size: 0.9rem;
+    }
+
+    .header h1 {
+        font-size: 1.5rem;
+    }
+
+    section img {
+        height: 170px
+    }
+
 }
