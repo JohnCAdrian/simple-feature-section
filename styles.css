@@ -61,6 +61,11 @@ section {
     box-shadow: 0 8px 32px #0002;
     min-width: 260px;
     height: auto;
+    transition: transform 0.18s;
+}
+
+section:hover {
+    transform: translateY(-7px) scale(1.03);
 }
 
 
